@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate Factory</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap"rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Chocolate Factory</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Indulge in the Sweetest Delight</h1>
+            <p>Experience the rich and exquisite taste of our handcrafted chocolates.</p>
+            <button>Explore Our Chocolates</button>
+        </div>
+    </header>
+
+    <section class="about">
+        <h2>About Us</h2>
+        <p>We are passionate about creating the finest chocolates using only the highest quality ingredients. Our dedication to craftsmanship and innovation results in a truly unforgettable chocolate experience.</p>
+        <img src="chocolate-factory-inside.jpg" alt="Chocolate Factory Inside">  </section>
+
+    <section class="products">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="choco.JPEG"alt="Chocolate 1">
+                <h3>Dark Chocolate Truffles</h3>
+                <p>Rich and intense dark chocolate truffles.</p>
+            </div>
+            <div class="product">
+                <img src="chocolate2.jpg" alt="Chocolate 2">
+                <h3>Milk Chocolate Bars</h3>
+                <p>Smooth and creamy milk chocolate bars.</p>
+            </div>
+            <div class="product">
+                <img src="chocolate3.jpg" alt="Chocolate 3">
+                <h3>White Chocolate with Almonds</h3>
+                <p>Sweet white chocolate with crunchy almonds.</p>
+            </div>
+            </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 Chocolate Factory. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+/* style.css */
+body {
+    font-family: 'Roboto', sans-serif; /* Use Roboto for general text */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333; /* Dark gray for text */
+    background-color: #f8f8f8; /* Light gray background */
+}
+
+header {
+    background-color: #d4af37; /* Golden brown header */
+    color: white;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif; /* Use Playfair Display for logo */
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif; /* Use Playfair Display for hero title */
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+
+.hero button {
+    background-color: #8b4513; /* Chocolate brown button */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.hero button:hover {
+    background-color: #653710; /* Darker chocolate brown on hover */
+}
+
+section {
+    padding: 40px;
+    text-align: center; /* Center the content within the sections*/
+}
+.about img {
+    max-width: 50%; /* Make the image responsive */
+    height: auto;
+    margin-top: 20px;
+    display: block; /* Prevents image from affecting text flow */
+    margin-left: auto; /* Centers the image */
+    margin-right: auto;
+}
+
+.products {
+  background-color: #fff; /* White background for products section */
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px;
+}
+
+.product {
+    border: 1px solid #ddd; /* Light gray border for product boxes */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners for product boxes */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for product boxes */
+    transition: transform 0.2s; /* Smooth scaling on hover */
+}
+
+.product:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
